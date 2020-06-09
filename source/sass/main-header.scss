@@ -1,0 +1,21 @@
+.main-header {
+  background: #2c3c4c url("/img/back-mobile_city.jpg") no-repeat;
+}
+
+.main-header__page-title {
+  min-height: 170px;
+}
+
+.main-header__page-title--index {
+  min-height: 396px;
+}
+
+.main-header__title {
+  margin: 0;
+  padding: 0;
+
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  color: #ffffff;
+}

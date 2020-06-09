@@ -1,0 +1,24 @@
+.site-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-list__item {
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #010101;
+}
+
+.site-list__link {
+  display: block;
+  min-height: 60px;
+
+  font-size: 18px;
+  line-height: 60px;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+}
