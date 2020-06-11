@@ -5,17 +5,17 @@ let fileswatch = "html,css,txt,json,md,woff2", // List of files extensions for w
 let paths = {
   scripts: {
     src: "source/js/*",
-    dest: "./source/js",
+    dest: "./docs/js",
   },
 
   styles: {
     src: "source/sass/style.scss",
-    dest: "./source/css",
+    dest: "./docs/css",
   },
 
   images: {
     src: "source/img/**/*.{png,jpg,svg}",
-    dest: "./source/img",
+    dest: "./docs/img",
   },
 
   jsOutputName: "app.min.js",
@@ -47,7 +47,7 @@ function scripts() {
 }
 
 function copy_js() {
-  return src(["source/js/**"]).pipe(dest("./build/js"));
+  return src(["source/js/**"]).pipe(dest("./docs/js"));
 }
 
 function styles() {
@@ -65,7 +65,7 @@ function styles() {
 function html() {
   return src("source/*.html")
     .pipe(posthtml([include()]))
-    .pipe(dest("build"))
+    .pipe(dest("docs"))
     .pipe(browserSync.stream());
 }
 
@@ -93,7 +93,7 @@ function cleanimg() {
 
 function browsersync() {
   browserSync.init({
-    server: "build/",
+    server: "docs/",
     notify: false,
     online: online,
   });
@@ -103,7 +103,7 @@ function startwatch() {
   watch("source/sass/*.scss", styles);
   watch("source/img/**/*.{png,jpg,svg}", images);
   watch("source/*.html", html);
-  watch("build/**/*.{" + fileswatch + "}").on("change", browserSync.reload);
+  watch("docs/**/*.{" + fileswatch + "}").on("change", browserSync.reload);
   watch("source/js/*.js", copy_js);
 }
 

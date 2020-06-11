@@ -55,9 +55,9 @@ ul {
 
 .site-list__link {
   display: block;
-  min-height: 61px;
+  min-height: 60px;
   font-size: 18px;
-  line-height: 61px;
+  line-height: 60px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
@@ -96,6 +96,19 @@ ul {
 .oval-button--pink {
   color: #d22856;
   border-color: #d22856; }
+
+.sqrt-button {
+  display: inline-block;
+  box-sizing: border-box;
+  min-height: 59px;
+  width: 276px;
+  font-size: 18px;
+  line-height: 59px;
+  color: #ffffff;
+  font-weight: bold;
+  text-align: center;
+  background-color: #2aab6d;
+  border: none; }
 
 .main-text {
   margin: 0;
@@ -265,3 +278,37 @@ ul {
   font-size: 14px;
   line-height: 30px;
   color: #d22856; }
+
+.text-group__input {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645; }
+
+.toggle-group {
+  background-color: #f2f2f2; }
+
+.toggle-group__description {
+  font-size: 14px;
+  line-height: 18px;
+  color: #d22856; }
+
+.toggle-group__item {
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645; }
+
+.emotions__label {
+  font-size: 14px;
+  line-height: 30px;
+  color: #d22856; }
+
+.emotions__area {
+  font-family: open sans;
+  font-size: 18px;
+  line-height: 30px;
+  color: #283645; }
+
+.profile__necessary-field {
+  font-size: 14px;
+  line-height: 30px;
+  color: #283645; }
