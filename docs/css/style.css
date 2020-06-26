@@ -24,7 +24,7 @@ ul {
   margin: 0 0; }
 
 .main-header {
-  background: #2c3c4c url("/img/back-mobile_city.jpg") no-repeat; }
+  background: #2c3c4c url("/img/back-mobile_city.jpg") no-repeat center 256px; }
 
 .main-header__page-title {
   min-height: 170px; }
@@ -41,11 +41,39 @@ ul {
   color: #ffffff; }
 
 .page-header {
+  display: flex;
+  flex-direction: column;
   background-color: rgba(0, 0, 0, 0.3); }
 
+.page-header__logo-block {
+  height: 66px;
+  width: 320px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  background-color: #283645;
+  border-top: 1px solid #485461;
+  border-bottom: 1px solid #010101; }
+
+.page-header__logo-link {
+  height: 22px; }
+
+@media (min-width: 700px) {
+  .page-header__logo-link {
+    height: 40px; }
+  .page-header__logo-block {
+    height: 110px; } }
+
+@media (min-width: 1448px) {
+  .page-header {
+    flex-direction: row;
+    align-items: center; }
+  .page-header__logo-link {
+    height: 40px; }
+  .page-header__logo-block {
+    height: 110px; } }
+
 .site-list {
-  margin: 0;
-  padding: 0;
   list-style: none; }
 
 .site-list__item {
@@ -55,25 +83,55 @@ ul {
 
 .site-list__link {
   display: block;
-  min-height: 60px;
   font-size: 18px;
-  line-height: 60px;
+  line-height: 62px;
   font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
   color: #ffffff;
   text-align: center; }
 
+@media (min-width: 1448px) {
+  .site-list {
+    width: 620px;
+    display: flex;
+    justify-content: space-between; }
+  .site-list__item {
+    background-color: transparent;
+    border: none; }
+  .site-list__link {
+    font-weight: 400;
+    text-transform: none; } }
+
 .downloading {
   background-color: #1d2631;
-  min-height: 271px; }
+  height: 270px;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 28px 20px; }
+
+.downloading__button {
+  margin-bottom: 32px; }
 
 .downloading__list {
-  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 205px;
+  margin: 0 auto;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none; }
 
+.downloading__link {
+  display: block;
+  width: 56px;
+  height: 48px;
+  background-color: green; }
+
 .downloading__paragraph {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -93,7 +151,7 @@ ul {
   border-radius: 28px;
   text-align: center; }
 
-.oval-button--pink {
+.oval-button--pink:hover {
   color: #d22856;
   border-color: #d22856; }
 
@@ -312,3 +370,19 @@ ul {
   font-size: 14px;
   line-height: 30px;
   color: #283645; }
+
+.main-nav {
+  width: 320px;
+  margin: 0 auto; }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0; }
+
+@media (min-width: 700px) {
+  .main-nav {
+    width: 700px; } }
+
+@media (min-width: 1448px) {
+  .main-nav {
+    width: auto; } }

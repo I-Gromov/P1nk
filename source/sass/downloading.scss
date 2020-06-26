@@ -1,15 +1,36 @@
 .downloading {
   background-color: #1d2631;
-  min-height: 271px;
+  height: 270px;
+  width: 320px;
+  box-sizing: border-box;
+  margin: 0 auto;
+  padding: 28px 20px;
+  }
+
+.downloading__button {
+  margin-bottom: 32px;
 }
 
 .downloading__list {
-  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  width: 205px;
+  margin: 0 auto;
+  margin-bottom: 25px;
   padding: 0;
   list-style: none;
 }
 
+.downloading__link {
+  display: block;
+  width: 56px;
+  height: 48px;
+  background-color: green;
+}
+
 .downloading__paragraph {
+  margin: 0;
+  padding: 0;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
