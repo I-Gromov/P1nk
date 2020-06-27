@@ -1,20 +1,21 @@
 .downloading {
+  text-align: center;
   background-color: #1d2631;
-  height: 270px;
   width: 320px;
+  height: 270px;
   box-sizing: border-box;
   margin: 0 auto;
   padding: 28px 20px;
   }
 
 .downloading__button {
-  margin-bottom: 32px;
+    margin-bottom: 32px;
 }
 
 .downloading__list {
   display: flex;
   justify-content: space-around;
-  width: 205px;
+  width: auto;
   margin: 0 auto;
   margin-bottom: 25px;
   padding: 0;
@@ -29,8 +30,8 @@
 }
 
 .downloading__paragraph {
-  margin: 0;
   padding: 0;
+  width: auto;
   font-size: 14px;
   line-height: 24px;
   font-weight: 300;
@@ -39,4 +40,24 @@
   text-align: center;
 }
 
+@media (min-width: $tablet-width) {
+  .downloading {
+    margin: 0;
+    height: 352px;
+    width: 300px;
+    padding: 0;
+    background-color: transparent;
+  }
 
+  .downloading__paragraph {
+    font-size: 18px;
+  }
+
+  .downloading__button {
+    margin-bottom: 45px;
+}
+
+.downloading__list {
+  margin-bottom: 40px;
+  }
+}
