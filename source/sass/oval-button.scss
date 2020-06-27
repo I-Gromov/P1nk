@@ -1,26 +1,32 @@
-.oval-button {
-  display: inline-block;
-  box-sizing: border-box;
-  min-height: 55px;
-  width: 281px;
+.oval-button
+{
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 55px;
 
-  font-size: 18px;
-  line-height: 55px;
-  color: #ffffff;
-  font-weight: bold;
+    display: inline-block;
 
-  border: 3px solid #ffffff;
-  border-radius: 28px;
-  text-align: center;
+    box-sizing: border-box;
+    width: 281px;
+    min-height: 55px;
+
+    text-align: center;
+
+    color: #fff;
+    border: 3px solid #fff;
+    border-radius: 28px;
 }
 
-.oval-button--pink:hover {
-  color: #d22856;
-  border-color: #d22856;
+.oval-button--pink:hover
+{
+    color: #d22856;
+    border-color: #d22856;
 }
 
-@media (min-width: $tablet-width) {
-  .oval-button {
-  width: 300px;
-  }
+@media (min-width: $tablet-width)
+{
+    .oval-button
+    {
+        width: 300px;
+    }
 }

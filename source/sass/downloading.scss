@@ -1,63 +1,90 @@
-.downloading {
-  text-align: center;
-  background-color: #1d2631;
-  width: 320px;
-  height: 270px;
-  box-sizing: border-box;
-  margin: 0 auto;
-  padding: 28px 20px;
-  }
+.downloading
+{
+    box-sizing: border-box;
+    height: 270px;
+    padding-top: 28px;
+    padding-bottom: 28px;
 
-.downloading__button {
+    text-align: center;
+
+    background-color: #1d2631;
+}
+
+.downloading__button
+{
     margin-bottom: 32px;
 }
 
-.downloading__list {
-  display: flex;
-  justify-content: space-around;
-  width: auto;
-  margin: 0 auto;
-  margin-bottom: 25px;
-  padding: 0;
-  list-style: none;
-}
+.downloading__list
+{
+    display: flex;
+    justify-content: center;
 
-.downloading__link {
-  display: block;
-  width: 56px;
-  height: 48px;
-  background-color: green;
-}
-
-.downloading__paragraph {
-  padding: 0;
-  width: auto;
-  font-size: 14px;
-  line-height: 24px;
-  font-weight: 300;
-  color: #ffffff;
-
-  text-align: center;
-}
-
-@media (min-width: $tablet-width) {
-  .downloading {
-    margin: 0;
-    height: 352px;
-    width: 300px;
+    width: auto;
+    margin-bottom: 25px;
     padding: 0;
-    background-color: transparent;
-  }
 
-  .downloading__paragraph {
-    font-size: 18px;
-  }
-
-  .downloading__button {
-    margin-bottom: 45px;
+    list-style: none;
 }
 
-.downloading__list {
-  margin-bottom: 40px;
-  }
+.downloading__item
+{
+    margin-right: 35px;
+}
+.downloading__item:last-child
+{
+    margin-right: 0;
+}
+
+.downloading__link
+{
+    display: block;
+
+    width: 56px;
+    height: 48px;
+
+    background-color: green;
+}
+
+.downloading__paragraph
+{
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
+
+    width: auto;
+    margin: 0;
+    padding: 0;
+
+    text-align: center;
+
+    color: #fff;
+}
+
+@media (min-width: $tablet-width)
+{
+    .downloading
+    {
+        width: 340px;
+        height: 352px;
+        margin: 0;
+        padding-top: 0;
+
+        background-color: transparent;
+    }
+
+    .downloading__paragraph
+    {
+        font-size: 18px;
+    }
+
+    .downloading__button
+    {
+        margin-bottom: 45px;
+    }
+
+    .downloading__list
+    {
+        margin-bottom: 40px;
+    }
 }

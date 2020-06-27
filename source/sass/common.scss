@@ -1,31 +1,56 @@
-body {
-  margin: 0;
-  padding: 0;
-
-  font-family: Open Sans;
-  }
-
-a {
-  text-decoration: none;
-}
-
-ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.visually-hidden:not(:focus):not(:active) {
-  position: absolute !important;
-  clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
-  clip: rect(1px, 1px, 1px, 1px);
-  padding: 0 !important;
-  border: 0 !important;
-  height: 1px !important;
-  width: 1px !important;
-  overflow: hidden;
-  margin: 0 0;
-}
-
 $tablet-width: 700px;
 $desctop-width: 1448px;
+
+
+body
+{
+    font-family: Open Sans;
+
+    margin: 0;
+    padding: 0;
+}
+
+a
+{
+    text-decoration: none;
+}
+
+ul
+{
+    margin: 0;
+    padding: 0;
+
+    list-style: none;
+}
+
+.visually-hidden:not(:focus):not(:active)
+{
+    position: absolute !important;
+
+    overflow: hidden;
+    clip: rect(1px 1px 1px 1px); /* IE6, IE7 */
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px !important;
+    height: 1px !important;
+    margin: 0 0;
+    padding: 0 !important;
+
+    border: 0 !important;
+}
+
+.container
+{
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+@media (min-width: $tablet-width)
+{
+    .container
+    {
+        width: 700px;
+    }
+}
