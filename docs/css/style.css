@@ -410,10 +410,14 @@ ul {
     display: inline; } }
 
 .tariffs {
-  overflow: hidden; }
+  box-sizing: border-box;
+  height: 473px;
+  padding-top: 90px;
+  background: url("/img/tariffs-back.png") center 80% no-repeat; }
 
 .tarriffs__table {
   width: 300%;
+  margin-bottom: 40px;
   line-height: 30px;
   border-spacing: 0;
   border-collapse: collapse;
@@ -425,12 +429,12 @@ ul {
 
 .tariffs__field {
   box-sizing: border-box;
-  width: 280px;
   height: 63px;
   padding-left: 22px;
   font-size: 14px;
   color: #283645;
   border-collapse: collapse;
+  background-color: #fff;
   border: 2px solid #e5e5e5; }
 
 .tariffs__field--head {
@@ -446,26 +450,24 @@ ul {
   border-right: 2px solid #e5e5e5;
   border-left: 2px solid #e5e5e5; }
 
-.tariffs__wrapper {
-  width: 100%; }
-
 .contacts {
-  min-height: 410px; }
+  min-height: 410px;
+  padding-top: 45px; }
 
 .contacts__header {
   width: 280px;
   margin: 0;
   margin-bottom: 30px;
   padding: 0;
-  text-align: center;
   font-size: 24px;
-  line-height: 29px;
   font-weight: 300;
-  color: #283645; }
+  line-height: 29px;
+  color: #283645;
+  text-align: center; }
 
 .contacts_item {
-  margin-bottom: 25px;
   width: 280px;
+  margin-bottom: 25px;
   text-align: center; }
 
 .contacts_item:last-child {
@@ -473,16 +475,16 @@ ul {
 
 .contacts__item-header {
   font-size: 18px;
-  line-height: auto;
   font-weight: bold;
+  line-height: auto;
   color: #283645; }
 
 .contacts__item-info {
   margin: 0;
   padding: 0;
   font-size: 24px;
-  line-height: auto;
   font-weight: 300;
+  line-height: auto;
   color: #d22856; }
 
 .gallery__description {
@@ -623,12 +625,30 @@ template {
 [hidden] {
   display: none; }
 
-.slider__item:nth-child(2),
-.slider__item:nth-child(3) {
-  display: none; }
+.slider {
+  overflow: hidden; }
+
+.slider__list {
+  position: relative;
+  width: 300%; }
+
+.slider__item {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 33.3%; }
+
+.slider__item--1 {
+  position: static; }
+
+.slider__item--2 {
+  left: 33.3%; }
+
+.slider__item--3 {
+  left: 66.6%; }
 
 .slider__togles {
-  width: 140px;
+  width: 56px;
   margin: 0;
   margin-right: auto;
   margin-left: auto;

@@ -1,9 +1,14 @@
 .tariffs {
-    overflow: hidden;
+    box-sizing: border-box;
+    height: 473px;
+    padding-top: 90px;
+
+    background: url('/img/tariffs-back.png') center 80% no-repeat;
 }
 
 .tarriffs__table {
     width: 300%;
+    margin-bottom: 40px;
 
     line-height: 30px;
 
@@ -20,7 +25,6 @@
 
 .tariffs__field {
     box-sizing: border-box;
-    width: 280px;
     height: 63px;
     padding-left: 22px;
 
@@ -29,6 +33,7 @@
 
     border-collapse: collapse;
 
+    background-color: #fff;
     border: 2px solid #e5e5e5;
 }
 
@@ -47,8 +52,4 @@
 .tariffs__field--head:nth-child(2) {
     border-right: 2px solid #e5e5e5;
     border-left: 2px solid #e5e5e5;
-}
-
-.tariffs__wrapper {
-    width: 100%;
 }

@@ -1,10 +1,35 @@
-.slider__item:nth-child(2),
-.slider__item:nth-child(3) {
-    display: none;
+.slider {
+    overflow: hidden;
+}
+
+.slider__list {
+    position: relative;
+
+    width: 300%;
+}
+
+.slider__item {
+    position: absolute;
+    top: 0;
+    left: 0;
+
+    width: 33.3%;
+}
+
+.slider__item--1 {
+    position: static;
+}
+
+.slider__item--2 {
+    left: 33.3%;
+}
+
+.slider__item--3 {
+    left: 66.6%;
 }
 
 .slider__togles {
-    width: 140px;
+    width: 56px;
     margin: 0;
     margin-right: auto;
     margin-left: auto;
