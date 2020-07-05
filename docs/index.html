@@ -8,32 +8,34 @@
   <body>
     <header class="main-header">
       <div class="main-header__menu page-header">
-        <div class="page-header__logo-block container">
-          <a class="page-header__logo-link">
-            <img class="page-header__logo-image" src="img/placeholder" width="" height="" alt="Логотип Pink">
-          </a>
-          <button class="page-header__toggle">Открыть меню</button>
+        <div class="page-header__wrapper">
+          <div class="page-header__logo-block container">
+            <a class="page-header__logo-link">
+              <img class="page-header__logo-image" src="img/placeholder" width="" height="" alt="Логотип Pink">
+            </a>
+            <button class="page-header__toggle">Открыть меню</button>
+          </div>
+          <nav class="main-nav">
+            <ul class="main-nav__list site-list">
+              <li class="site-list__item site-list__item--active">
+                <a class="site-list__link">Главная</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="photo.html">Фотографии</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="form.html">Конкурс</a>
+              </li>
+              <li class="site-list__item">
+                <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
+              </li>
+            </ul>
+          </nav>
         </div>
-        <nav class="main-nav">
-          <ul class="main-nav__list site-list">
-            <li class="site-list__item site-list__item--active">
-              <a class="site-list__link">Главная</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="photo.html">Фотографии</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="form.html">Конкурс</a>
-            </li>
-            <li class="site-list__item">
-              <a class="site-list__link" href="https://htmlacademy.ru/">HTML Academy</a>
-            </li>
-          </ul>
-        </nav>
       </div>
 
-      <div class="main-header__wrapper">
-        <div class="main-header__page-title--index container">
+      <div class="main-header__wrapper container">
+        <div class="main-header__page-title--index">
           <h1 class="main-header__title">
             Взгляните <br>
             на жизнь <br>
@@ -41,7 +43,7 @@
           </h1>
         </div>
 
-        <div class="main-header__links downloading container">
+        <div class="main-header__links downloading">
           <a class="downloading__button oval-button" href="https://www.apple.com/ru/itunes/">Скачать приложение
           </a>
           <ul class="downloading__list">
@@ -72,52 +74,59 @@
       <h1 class="visually-hidden">Pink - взгляни на жизнь иначе!</h1>
 
       <section class="advantages">
-        <p class="advantages__header">
-          Устали от серости мегаполиса?
-        </p>
-        <p class="advantages__header">
-          Нам есть, что вам предложить!
-        </p>
-        <ul class="advantages__list">
-          <li class="advantages__item advantages__item--fun">
-            <h3 class="advantages__title">Поднимает настроение</h3>
-            <p class="advantages__description">
-              Приложение позволит вам победить осеннюю хандру и депрессию
-              буквально в несколько кликов!
-            </p>
-          </li>
-          <li class="advantages__item advantages__item--world">
-            <h3 class="advantages__title">Меняет мир вокруг</h3>
-            <p class="advantages__description">
-              Сделайте снимок и украсьте его смайликом или текстовой подписью,
-              чтобы усилить эффект
-            </p>
-          </li>
-          <li class="advantages__item advantages__item--friends">
-            <h3 class="advantages__title">Заводит новых друзей</h3>
-            <p class="advantages__description">
-              Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
-              заводите новых
-            </p>
-            <img src="" alt="">
-          </li>
-        </ul>
-        <div class="advantages__duration visually-hidden">
-          <h3 class="advantages__title">Эффект на 24 часа!</h3>
-          <p class="advantages__description">
-            Британские ученые провели исследования и доказали, что положительный
-            эффект от использования приложения длится целые сутки!
+        <div class="advantages__background container">
+          <p class="advantages__header">
+            Устали от серости мегаполиса?
           </p>
-          <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+          <p class="advantages__header">
+            Нам есть, что вам предложить!
+          </p>
+          <ul class="advantages__list">
+            <li class="advantages__item advantages__item--fun">
+              <h3 class="advantages__title">Поднимает настроение</h3>
+              <p class="advantages__description">
+                Приложение позволит вам победить осеннюю хандру и депрессию
+                буквально в несколько кликов!
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--world">
+              <h3 class="advantages__title">Меняет мир вокруг</h3>
+              <p class="advantages__description">
+                Сделайте снимок и украсьте его смайликом или текстовой подписью,
+                чтобы усилить эффект
+              </p>
+            </li>
+            <li class="advantages__item advantages__item--friends">
+              <h3 class="advantages__title">Заводит новых друзей</h3>
+              <p class="advantages__description">
+                Ставьте лайки, комментируйте, делитесь фотографиями с друзьями и
+                заводите новых
+              </p>
+              <img src="" alt="">
+            </li>
+          </ul>
+        </div>
+        <div class="advantages__duration container">
+          <div class="advantages__inner">
+            <h3 class="advantages__large-title">Эффект на 24 часа!</h3>
+            <p class="advantages__description">
+              Британские ученые провели исследования и доказали, что
+              положительный эффект от использования приложения длится целые
+              сутки!
+            </p>
+            <a class="advantages__link" href="#">Узнать больше об исследовании</a>
+          </div>
         </div>
       </section>
 
-      <section class="reviews">
+      <section class="reviews container">
         <div class="reviews__wrapper slider">
           <h2 class="visually-hidden">Отзывы</h2>
           <div class="reviews__list slider__list">
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Николай Петров</cite>
+              <cite class="reviews__author">Николай Петров
+                <span class="reviews__author-profession"><br>25 лет,водитель трамвая</span>
+              </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей
@@ -125,7 +134,9 @@
               </p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Павел Иванов</cite>
+              <cite class="reviews__author">Павел Иванов
+                <span class="reviews__author-profession"><br>40 лет, ресторатор</span>
+              </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей
@@ -133,7 +144,9 @@
               </p>
             </blockquote>
             <blockquote class="reviews__item slider__item">
-              <cite class="reviews__author">Александр Егоров</cite>
+              <cite class="reviews__author">Александр Егоров
+                <span class="reviews__author-profession"><br>22 года, фотограф</span>
+              </cite>
               <p class="reviews__text">
                 «Это приложение перевернуло мой мир и позволило по-новому
                 взглянуть на привычные серые вещи! А еще я познакомился со своей
@@ -152,26 +165,26 @@
       </section>
 
       <section class="tariffs">
-        <div class="tariffs__wrapper slider">
+        <div class="tariffs__wrapper slider container">
           <h2 class="visually-hidden">Тарифы</h2>
           <table class="tarriffs__table">
             <tr>
-              <th class="tariffs__head">
+              <th class="tariffs__field tariffs__field--head">
                 База <br>
                 <span class="tariffs__price">1,99 USD</span>
               </th>
-              <th class="tariffs__head">
+              <th class="tariffs__field tariffs__field--head">
                 Стандарт<br>
                 <span class="tariffs__price">3,99 USD</span>
               </th>
-              <th class="tariffs__head">
+              <th class="tariffs__field tariffs__field--head">
                 Анлим<br>
                 <span class="tariffs__price">9,99 USD</span>
               </th>
             </tr>
             <tr>
-              <td class="tariffs__field">Розовый фильтр</td>
-              <td class="tariffs__field">Розовый фильтр</td>
+              <td class="tariffs__field">Розовый фильтр
+              </td><td class="tariffs__field">Розовый фильтр</td>
               <td class="tariffs__field">Розовый фильтр</td>
             </tr>
             <tr>

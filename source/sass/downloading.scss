@@ -1,22 +1,17 @@
-.downloading
-{
+.downloading {
     box-sizing: border-box;
     height: 270px;
     padding-top: 28px;
     padding-bottom: 28px;
 
     text-align: center;
-
-    background-color: #1d2631;
 }
 
-.downloading__button
-{
+.downloading__button {
     margin-bottom: 32px;
 }
 
-.downloading__list
-{
+.downloading__list {
     display: flex;
     justify-content: center;
 
@@ -27,17 +22,14 @@
     list-style: none;
 }
 
-.downloading__item
-{
+.downloading__item {
     margin-right: 35px;
 }
-.downloading__item:last-child
-{
+.downloading__item:last-child {
     margin-right: 0;
 }
 
-.downloading__link
-{
+.downloading__link {
     display: block;
 
     width: 56px;
@@ -46,45 +38,53 @@
     background-color: green;
 }
 
-.downloading__paragraph
-{
-    font-size: 14px;
-    font-weight: 300;
-    line-height: 24px;
-
+.downloading__paragraph {
     width: auto;
     margin: 0;
     padding: 0;
 
-    text-align: center;
-
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 24px;
     color: #fff;
+
+    text-align: center;
 }
 
-@media (min-width: $tablet-width)
-{
-    .downloading
-    {
-        width: 340px;
-        height: 352px;
+@media (min-width: $tablet-width) {
+    .downloading {
+        width: 300px;
+        height: 270px;
         margin: 0;
-        padding-top: 0;
+        padding: 0;
 
         background-color: transparent;
     }
 
-    .downloading__paragraph
-    {
+    .downloading__paragraph {
         font-size: 18px;
     }
 
-    .downloading__button
-    {
+    .downloading__button {
         margin-bottom: 45px;
     }
 
-    .downloading__list
-    {
+    .downloading__list {
         margin-bottom: 40px;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .downloading {
+        height: 280px;
+        padding: 0;
+    }
+
+    .downloading__button {
+        margin-bottom: 67px;
+    }
+
+    .downloading__list {
+        margin-bottom: 55px;
     }
 }

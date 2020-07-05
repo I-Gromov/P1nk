@@ -37,7 +37,7 @@
     }
 }
 
-@media (min-width: $desctop-width)
+@media (min-width: $desktop-width)
 {
     .page-header
     {
@@ -52,6 +52,21 @@
 
     .page-header__logo-block
     {
+        width: 150px;
         height: 110px;
+        margin: 0;
+        padding: 0;
+    }
+
+    .page-header__wrapper
+    {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        box-sizing: border-box;
+        width: $desktop-width;
+        margin: 0 auto;
+        padding: 0 130px;
     }
 }

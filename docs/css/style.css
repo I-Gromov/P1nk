@@ -1,7 +1,7 @@
 body {
-  font-family: Open Sans;
   margin: 0;
-  padding: 0; }
+  padding: 0;
+  font-family: 'Open Sans', sans-serif; }
 
 a {
   text-decoration: none; }
@@ -29,12 +29,18 @@ ul {
   margin: 0 auto;
   padding: 0 20px; }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .container {
-    width: 700px; } }
+    width: 660px; } }
+
+@media (min-width: 1200px) {
+  .container {
+    width: 1200px;
+    padding: 0 130px; } }
 
 .main-header {
-  background: #2c3c4c url("/img/back-mobile_city.jpg") no-repeat center 256px; }
+  background: #2c3c4c url("../img/back-mobile_city.jpg") no-repeat center 256px;
+  background-color: #1d2631; }
 
 .main-header__page-title {
   min-height: 170px; }
@@ -54,27 +60,40 @@ ul {
   padding: 0;
   color: #fff; }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .main-header__wrapper {
     display: flex;
     flex-direction: column;
     justify-content: center;
     box-sizing: border-box;
-    width: 700px;
+    width: 660px;
     height: 620px;
     margin: 0 auto;
-    padding-top: 100px; }
+    padding-top: 20px; }
   .main-header__page-title--index {
     display: block;
-    width: 340px;
+    width: 300px;
     height: auto;
     margin: 0;
-    padding-bottom: 30px; }
+    margin-bottom: 30px; }
   .main-header {
-    background: #2c3c4c url("/img/back-city.jpg") no-repeat center 256px; }
+    background: #2c3c4c url("../img/back-city.jpg") no-repeat center 256px; }
   .main-header__title {
     font-size: 40px;
     line-height: 48px; } }
+
+@media (min-width: 1200px) {
+  .main-header__wrapper {
+    width: 1200px;
+    height: 743px;
+    padding-top: 0; }
+  .main-header {
+    background: #2c3c4c url("../img/back-desktop_city.jpg") no-repeat center 0; }
+  .main-header__page-title--index {
+    margin-bottom: 50px; }
+  .main-header__title {
+    font-size: 50px;
+    line-height: 60px; } }
 
 .page-header {
   display: flex;
@@ -93,20 +112,31 @@ ul {
 .page-header__logo-link {
   height: 22px; }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .page-header__logo-link {
     height: 40px; }
   .page-header__logo-block {
     height: 110px; } }
 
-@media (min-width: 1448px) {
+@media (min-width: 1200px) {
   .page-header {
     align-items: center;
     flex-direction: row; }
   .page-header__logo-link {
     height: 40px; }
   .page-header__logo-block {
-    height: 110px; } }
+    width: 150px;
+    height: 110px;
+    margin: 0;
+    padding: 0; }
+  .page-header__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-sizing: border-box;
+    width: 1200px;
+    margin: 0 auto;
+    padding: 0 130px; } }
 
 .site-list {
   list-style: none; }
@@ -126,7 +156,7 @@ ul {
   text-transform: uppercase;
   color: #fff; }
 
-@media (min-width: 1448px) {
+@media (min-width: 1200px) {
   .site-list {
     display: flex;
     justify-content: space-between;
@@ -143,8 +173,7 @@ ul {
   height: 270px;
   padding-top: 28px;
   padding-bottom: 28px;
-  text-align: center;
-  background-color: #1d2631; }
+  text-align: center; }
 
 .downloading__button {
   margin-bottom: 32px; }
@@ -170,21 +199,21 @@ ul {
   background-color: green; }
 
 .downloading__paragraph {
-  font-size: 14px;
-  font-weight: 300;
-  line-height: 24px;
   width: auto;
   margin: 0;
   padding: 0;
-  text-align: center;
-  color: #fff; }
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 24px;
+  color: #fff;
+  text-align: center; }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .downloading {
-    width: 340px;
-    height: 352px;
+    width: 300px;
+    height: 270px;
     margin: 0;
-    padding-top: 0;
+    padding: 0;
     background-color: transparent; }
   .downloading__paragraph {
     font-size: 18px; }
@@ -192,6 +221,15 @@ ul {
     margin-bottom: 45px; }
   .downloading__list {
     margin-bottom: 40px; } }
+
+@media (min-width: 1200px) {
+  .downloading {
+    height: 280px;
+    padding: 0; }
+  .downloading__button {
+    margin-bottom: 67px; }
+  .downloading__list {
+    margin-bottom: 55px; } }
 
 .oval-button {
   font-size: 18px;
@@ -210,7 +248,7 @@ ul {
   color: #d22856;
   border-color: #d22856; }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .oval-button {
     width: 300px; } }
 
@@ -234,51 +272,101 @@ ul {
   line-height: 30px;
   color: #283645; }
 
+.advantages__background {
+  box-sizing: border-box;
+  padding-bottom: 320px;
+  background: url("/img/advantages-back.png") center bottom no-repeat; }
+
 .advantages {
-  min-height: 1000px;
-  background: url("/img/advantages-back.png") 0% 100% no-repeat; }
+  padding-top: 40px; }
 
 .advantages__header {
+  width: auto;
   margin: 0;
   padding: 0;
-  width: 280px;
-  text-align: center;
   font-size: 24px;
-  line-height: 32px;
   font-weight: 300;
-  color: #283645; }
+  line-height: 32px;
+  color: #283645;
+  text-align: center; }
 
 .advantages__header:first-child {
-  margin-bottom: 35px; }
+  margin-bottom: 30px; }
 
 .advantages__header:nth-child(2) {
-  margin-bottom: 110px; }
+  margin-bottom: 100px; }
 
 .advantages__item {
-  margin-bottom: 30px;
   width: 280px;
-  text-align: center;
-  font-size: 14px;
-  line-height: 24px;
-  color: #283645; }
+  margin: 0 auto;
+  margin-bottom: 30px;
+  text-align: center; }
 
 .advantages__item:last-child {
   margin-bottom: 0; }
 
 .advantages__title {
   margin: 0;
+  margin-bottom: 15px;
   padding: 0;
   font-size: 18px;
-  line-height: 24px;
   font-weight: bold;
-  color: #000000; }
+  line-height: 24px;
+  color: #000; }
+
+.advantages__description {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  line-height: 24px;
+  color: #283645; }
+
+.advantages__duration {
+  display: none; }
+
+@media (min-width: 660px) {
+  .advantages__background {
+    padding-bottom: 0;
+    background: url("/img/advantages-back.png") center -40% no-repeat; }
+  .advantages__header:first-child {
+    margin-bottom: 0; }
+  .advantages__header:nth-child(2) {
+    width: 280px;
+    margin: 0 auto;
+    margin-bottom: 110px; }
+  .advantages__item {
+    width: 310px;
+    margin-right: 0;
+    text-align: left; }
+  .advantages__inner {
+    width: 310px;
+    margin-left: auto; }
+  .advantages__large-title {
+    width: 170px;
+    font-size: 30px;
+    line-height: 36px; }
+  .advantages__inner .advantages__description {
+    margin-bottom: 15px; }
+  .advantages__duration {
+    display: block;
+    height: 405px;
+    padding-top: 95px; }
+  .advantages__link {
+    font-size: 14px;
+    line-height: 24px;
+    color: #d22856;
+    text-decoration: underline; } }
 
 .reviews {
-  min-height: 350px;
-  width: 280px;
+  height: 355px;
   padding-top: 50px; }
 
+.reviews__list {
+  margin-bottom: 5px; }
+
 .reviews__item {
+  display: flex;
+  flex-direction: column;
   margin: 0;
   padding: 0;
   text-align: center; }
@@ -289,10 +377,16 @@ ul {
   margin-bottom: 20px;
   padding: 0;
   font-size: 18px;
-  line-height: 30px;
   font-weight: bold;
-  color: #000000;
-  font-style: normal; }
+  font-style: normal;
+  line-height: 30px;
+  color: #000; }
+
+.reviews__author-profession {
+  display: none;
+  font-size: 14px;
+  font-weight: 400;
+  color: #283645; }
 
 .reviews__text {
   margin: 0;
@@ -301,27 +395,59 @@ ul {
   line-height: 30px;
   color: #283645; }
 
-.tarriffs__table {
-  line-height: 30px;
-  text-transform: uppercase;
-  border-collapse: collapse;
-  border-spacing: 0; }
+.review__prev,
+.review__next {
+  display: none; }
 
-.tariffs__head {
-  font-size: 18px;
-  font-weight: bold;
-  color: #ffffff;
-  background-color: #283645; }
+@media (min-width: 660px) {
+  .reviews__text {
+    margin-bottom: 35px;
+    font-size: 18px; }
+  .reviews__author {
+    order: 1;
+    font-size: 20px; }
+  .reviews__author-profession {
+    display: inline; } }
+
+.tariffs {
+  overflow: hidden; }
+
+.tarriffs__table {
+  width: 300%;
+  line-height: 30px;
+  border-spacing: 0;
+  border-collapse: collapse;
+  text-transform: uppercase; }
 
 .tariffs__price {
   font-size: 24px;
   font-weight: 300; }
 
 .tariffs__field {
+  box-sizing: border-box;
+  width: 280px;
+  height: 63px;
+  padding-left: 22px;
   font-size: 14px;
   color: #283645;
-  border: 2px solid #e5e5e5;
-  border-collapse: collapse; }
+  border-collapse: collapse;
+  border: 2px solid #e5e5e5; }
+
+.tariffs__field--head {
+  height: 98px;
+  padding: 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: #fff;
+  background-color: #283645;
+  border-color: #283645; }
+
+.tariffs__field--head:nth-child(2) {
+  border-right: 2px solid #e5e5e5;
+  border-left: 2px solid #e5e5e5; }
+
+.tariffs__wrapper {
+  width: 100%; }
 
 .contacts {
   min-height: 410px; }
@@ -420,7 +546,7 @@ ul {
   color: #d22856; }
 
 .emotions__area {
-  font-family: open sans;
+  font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 30px;
   color: #283645; }
@@ -438,10 +564,84 @@ ul {
   margin: 0;
   padding: 0; }
 
-@media (min-width: 700px) {
+@media (min-width: 660px) {
   .main-nav {
-    width: 700px; } }
+    width: 660px; } }
 
-@media (min-width: 1448px) {
+@media (min-width: 1200px) {
   .main-nav {
-    width: auto; } }
+    width: auto;
+    margin: 0; } }
+
+[type='search'] {
+  outline-offset: -2px;
+  /* 2 */
+  -webkit-appearance: textfield;
+  /* 1 */ }
+
+/**
+ * Remove the inner padding in Chrome and Safari on macOS.
+ */
+[type='search']::-webkit-search-decoration {
+  -webkit-appearance: none; }
+
+/**
+ * 1. Correct the inability to style clickable types in iOS and Safari.
+ * 2. Change font properties to `inherit` in Safari.
+ */
+::-webkit-file-upload-button {
+  font: inherit;
+  /* 2 */
+  -webkit-appearance: button;
+  /* 1 */ }
+
+/* Interactive
+   ========================================================================== */
+/*
+ * Add the correct display in Edge, IE 10+, and Firefox.
+ */
+details {
+  display: block; }
+
+/*
+ * Add the correct display in all browsers.
+ */
+summary {
+  display: list-item; }
+
+/* Misc
+   ========================================================================== */
+/**
+ * Add the correct display in IE 10+.
+ */
+template {
+  display: none; }
+
+/**
+ * Add the correct display in IE 10.
+ */
+[hidden] {
+  display: none; }
+
+.slider__item:nth-child(2),
+.slider__item:nth-child(3) {
+  display: none; }
+
+.slider__togles {
+  width: 140px;
+  margin: 0;
+  margin-right: auto;
+  margin-left: auto;
+  padding: 0;
+  text-align: center;
+  vertical-align: middle; }
+
+.slider__toggle {
+  width: 6px;
+  height: 6px;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  background: #bec2c7;
+  border: none;
+  border-radius: 50%; }

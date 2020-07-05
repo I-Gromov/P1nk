@@ -1,30 +1,25 @@
-$tablet-width: 700px;
-$desctop-width: 1448px;
+$tablet-width: 660px;
+$desktop-width: 1200px;
 
-
-body
-{
-    font-family: Open Sans;
-
+body {
     margin: 0;
     padding: 0;
+
+    font-family: 'Open Sans', sans-serif;
 }
 
-a
-{
+a {
     text-decoration: none;
 }
 
-ul
-{
+ul {
     margin: 0;
     padding: 0;
 
     list-style: none;
 }
 
-.visually-hidden:not(:focus):not(:active)
-{
+.visually-hidden:not(:focus):not(:active) {
     position: absolute !important;
 
     overflow: hidden;
@@ -39,18 +34,22 @@ ul
     border: 0 !important;
 }
 
-.container
-{
+.container {
     box-sizing: border-box;
     width: 320px;
     margin: 0 auto;
     padding: 0 20px;
 }
 
-@media (min-width: $tablet-width)
-{
-    .container
-    {
-        width: 700px;
+@media (min-width: $tablet-width) {
+    .container {
+        width: $tablet-width;
+    }
+}
+
+@media (min-width: $desktop-width) {
+    .container {
+        width: $desktop-width;
+        padding: 0 130px;
     }
 }

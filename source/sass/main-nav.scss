@@ -14,14 +14,15 @@
 {
     .main-nav
     {
-        width: 700px;
+        width: $tablet-width;
     }
 }
 
-@media (min-width: $desctop-width)
+@media (min-width: $desktop-width)
 {
     .main-nav
     {
         width: auto;
+        margin: 0;
     }
 }
