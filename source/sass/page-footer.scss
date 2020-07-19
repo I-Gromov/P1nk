@@ -1,0 +1,19 @@
+.page-footer {
+    display: none;
+}
+
+@media (min-width: $tablet-width) {
+    .page-footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        height: 127px;
+    }
+
+    .page-footer__logo-link {
+        display: block;
+
+        height: 40px;
+    }
+}

@@ -4,7 +4,7 @@
 }
 
 .contacts__header {
-    width: 280px;
+    width: 100%;
     margin: 0;
     margin-bottom: 30px;
     padding: 0;
@@ -17,7 +17,7 @@
     text-align: center;
 }
 
-.contacts_item {
+.contacts__item {
     width: 280px;
     margin-bottom: 25px;
 
@@ -43,4 +43,29 @@
     font-weight: 300;
     line-height: auto;
     color: #d22856;
+}
+
+@media (min-width: $tablet-width) {
+    .contacts__header {
+        font-size: 40px;
+        line-height: 48px;
+    }
+
+    .contacts__list {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    .contacts__item {
+        flex-basis: 50%;
+
+        margin-bottom: 45px;
+    }
+
+    .contacts__item:last-child {
+        flex-basis: 100%;
+
+        margin-bottom: 0;
+    }
 }
